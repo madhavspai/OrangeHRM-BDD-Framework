@@ -36,4 +36,11 @@ Scenario: Login with empty credentials
     When the user submits the login form with both username and password empty
     Then a validation message "Required" should be displayed for the username field
     And a validation message "Required" should be displayed for the password field
-    And the user should not be logged in
+    And the user should not be logged in 
+
+
+
+
+
+
+
