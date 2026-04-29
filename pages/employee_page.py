@@ -7,4 +7,5 @@ class EmployeePage:
     SAVE_BUTTON = (By.CSS_SELECTOR, "button[type='submit']")
     PIM_MENU = (By.XPATH, "//span[text()='PIM']")
     ADD_EMPLOYEE_LINK = (By.LINK_TEXT, "Add Employee")
+    VALIDATION_MESSAGE = (By.XPATH, "//span[contains(@class,'oxd-input-field-error-message')]")
     

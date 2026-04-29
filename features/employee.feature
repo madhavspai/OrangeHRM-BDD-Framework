@@ -5,7 +5,7 @@ Feature: Add employee Functionality
 @smoke 
 Scenario: Add employee details 
 Given user is on the add employee page   
-When user enters valid firstname and last name
+When user enters valid firstname and lastname
 And user saves the details
 Then user should see successfully saved message  
 
