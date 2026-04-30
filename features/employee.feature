@@ -7,7 +7,7 @@ Scenario: Add employee details
 Given user is on the add employee page   
 When user enters valid firstname and lastname
 And user saves the details
-Then user should see successfully saved message  
+Then user should see personal details saved message  
 
 @regression
 Scenario: Add only first name

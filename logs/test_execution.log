@@ -1,0 +1,202 @@
+2026-04-30 12:26:14,713 - builtins - INFO - Navigating to login page
+2026-04-30 12:26:14,715 - builtins - INFO - Entering valid credentials
+2026-04-30 12:26:20,822 - builtins - INFO - Navigating to login page
+2026-04-30 12:26:28,176 - builtins - INFO - Navigating to login page
+2026-04-30 12:26:32,865 - builtins - INFO - Navigating to login page
+2026-04-30 12:26:38,588 - builtins - INFO - Navigating to login page
+2026-04-30 12:34:41,453 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:34:41,453 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:34:41,454 - environment - INFO - Completed scenario: Add employee details - Status: Status.error
+2026-04-30 12:34:41,454 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:34:41,454 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:34:41,454 - environment - INFO - Completed scenario: Add only first name - Status: Status.error
+2026-04-30 12:34:41,454 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:34:41,455 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:34:41,455 - environment - INFO - Completed scenario: Add only last name - Status: Status.error
+2026-04-30 12:34:41,455 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:34:41,455 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:34:41,455 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.error
+2026-04-30 12:41:21,430 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:41:30,511 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:41:33,430 - employee_steps - INFO - Entering employee details
+2026-04-30 12:41:33,817 - employee_steps - INFO - Saving employee record
+2026-04-30 12:41:34,232 - environment - INFO - Completed scenario: Add employee details - Status: Status.error
+2026-04-30 12:41:34,303 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:41:40,037 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:41:44,140 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 12:41:44,213 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:41:49,800 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:41:54,186 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 12:41:54,261 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:42:00,060 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:42:05,318 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 12:46:40,527 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:46:49,218 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:46:51,547 - employee_steps - INFO - Entering employee details
+2026-04-30 12:46:51,922 - employee_steps - INFO - Saving employee record
+2026-04-30 12:46:56,503 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:46:56,579 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:47:02,993 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:47:06,760 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 12:47:06,833 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:47:15,170 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:47:19,293 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 12:47:19,368 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:47:27,425 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:47:31,678 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 12:48:26,301 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:48:32,410 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:48:34,995 - employee_steps - INFO - Entering employee details
+2026-04-30 12:48:35,447 - employee_steps - INFO - Saving employee record
+2026-04-30 12:48:40,640 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:48:40,717 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:48:49,713 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:49:00,733 - environment - INFO - Completed scenario: Add only first name - Status: Status.error
+2026-04-30 12:49:00,807 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:49:09,479 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:49:22,449 - environment - INFO - Completed scenario: Add only last name - Status: Status.error
+2026-04-30 12:49:22,527 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:49:32,111 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:49:38,445 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 12:49:38,522 - environment - INFO - Starting scenario: Successful login
+2026-04-30 12:49:44,239 - login steps - INFO - Navigating to login page
+2026-04-30 12:49:44,239 - login steps - INFO - Entering valid credentials
+2026-04-30 12:49:46,396 - environment - INFO - Completed scenario: Successful login - Status: Status.passed
+2026-04-30 12:49:46,466 - environment - INFO - Starting scenario: Unsuccessful Login
+2026-04-30 12:49:52,823 - login steps - INFO - Navigating to login page
+2026-04-30 12:49:55,547 - environment - INFO - Completed scenario: Unsuccessful Login - Status: Status.passed
+2026-04-30 12:49:55,618 - environment - INFO - Starting scenario: Login with empty username
+2026-04-30 12:50:00,088 - login steps - INFO - Navigating to login page
+2026-04-30 12:50:00,550 - environment - INFO - Completed scenario: Login with empty username - Status: Status.passed
+2026-04-30 12:50:00,619 - environment - INFO - Starting scenario: Login with empty password
+2026-04-30 12:50:05,569 - login steps - INFO - Navigating to login page
+2026-04-30 12:50:05,999 - environment - INFO - Completed scenario: Login with empty password - Status: Status.passed
+2026-04-30 12:50:06,067 - environment - INFO - Starting scenario: Login with empty credentials
+2026-04-30 12:50:10,620 - login steps - INFO - Navigating to login page
+2026-04-30 12:50:11,032 - environment - INFO - Completed scenario: Login with empty credentials - Status: Status.passed
+2026-04-30 12:50:11,101 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:50:21,308 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:50:21,379 - environment - INFO - Starting scenario: Add only firstname
+2026-04-30 12:50:31,092 - environment - INFO - Completed scenario: Add only firstname - Status: Status.passed
+2026-04-30 12:50:31,159 - environment - INFO - Starting scenario: Add only lastname
+2026-04-30 12:50:36,825 - environment - INFO - Completed scenario: Add only lastname - Status: Status.hook_error
+2026-04-30 12:50:36,850 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:51:45,311 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 12:51:45,387 - environment - INFO - Starting scenario: Search with a valid employee name
+2026-04-30 12:52:02,094 - environment - INFO - Completed scenario: Search with a valid employee name - Status: Status.passed
+2026-04-30 12:52:02,172 - environment - INFO - Starting scenario: Search with a valid employee ID
+2026-04-30 12:52:16,728 - environment - INFO - Completed scenario: Search with a valid employee ID - Status: Status.passed
+2026-04-30 12:52:16,808 - environment - INFO - Starting scenario: Search with an invalid employee name
+2026-04-30 12:52:27,716 - environment - INFO - Completed scenario: Search with an invalid employee name - Status: Status.passed
+2026-04-30 12:52:27,787 - environment - INFO - Starting scenario: Search with empty fields
+2026-04-30 12:52:39,477 - environment - INFO - Completed scenario: Search with empty fields - Status: Status.passed
+2026-04-30 12:54:38,003 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:54:44,650 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:54:47,292 - employee_steps - INFO - Entering employee details
+2026-04-30 12:54:47,688 - employee_steps - INFO - Saving employee record
+2026-04-30 12:54:52,271 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:54:52,345 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:54:59,097 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:55:03,260 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 12:55:03,331 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:55:11,851 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:55:16,158 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 12:55:16,232 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:56:29,745 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:56:37,703 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:56:42,286 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 12:57:23,542 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:57:33,106 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:57:37,544 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 12:57:51,670 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:58:06,994 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:58:09,597 - employee_steps - INFO - Entering employee details
+2026-04-30 12:58:10,000 - employee_steps - INFO - Saving employee record
+2026-04-30 12:58:14,690 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:58:14,766 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 12:58:24,429 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:58:29,029 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 12:58:29,101 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 12:58:34,819 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:58:39,426 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 12:58:39,500 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 12:58:47,342 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 12:58:55,174 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.error
+2026-04-30 12:58:55,251 - environment - INFO - Starting scenario: Successful login
+2026-04-30 12:59:00,018 - login steps - INFO - Navigating to login page
+2026-04-30 12:59:00,018 - login steps - INFO - Entering valid credentials
+2026-04-30 12:59:03,932 - environment - INFO - Completed scenario: Successful login - Status: Status.passed
+2026-04-30 12:59:04,000 - environment - INFO - Starting scenario: Unsuccessful Login
+2026-04-30 12:59:08,893 - login steps - INFO - Navigating to login page
+2026-04-30 12:59:12,645 - environment - INFO - Completed scenario: Unsuccessful Login - Status: Status.passed
+2026-04-30 12:59:12,715 - environment - INFO - Starting scenario: Login with empty username
+2026-04-30 12:59:17,054 - login steps - INFO - Navigating to login page
+2026-04-30 12:59:17,737 - environment - INFO - Completed scenario: Login with empty username - Status: Status.passed
+2026-04-30 12:59:17,807 - environment - INFO - Starting scenario: Login with empty password
+2026-04-30 12:59:21,990 - login steps - INFO - Navigating to login page
+2026-04-30 12:59:22,671 - environment - INFO - Completed scenario: Login with empty password - Status: Status.passed
+2026-04-30 12:59:22,740 - environment - INFO - Starting scenario: Login with empty credentials
+2026-04-30 12:59:26,956 - login steps - INFO - Navigating to login page
+2026-04-30 12:59:27,400 - environment - INFO - Completed scenario: Login with empty credentials - Status: Status.passed
+2026-04-30 12:59:27,469 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 12:59:40,061 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 12:59:40,132 - environment - INFO - Starting scenario: Add only firstname
+2026-04-30 12:59:52,139 - environment - INFO - Completed scenario: Add only firstname - Status: Status.passed
+2026-04-30 12:59:52,211 - environment - INFO - Starting scenario: Add only lastname
+2026-04-30 13:00:01,903 - environment - INFO - Completed scenario: Add only lastname - Status: Status.error
+2026-04-30 13:00:01,925 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 13:02:00,597 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 13:02:00,673 - environment - INFO - Starting scenario: Search with a valid employee name
+2026-04-30 13:02:17,598 - environment - INFO - Completed scenario: Search with a valid employee name - Status: Status.passed
+2026-04-30 13:02:17,670 - environment - INFO - Starting scenario: Search with a valid employee ID
+2026-04-30 13:02:33,396 - environment - INFO - Completed scenario: Search with a valid employee ID - Status: Status.passed
+2026-04-30 13:02:33,474 - environment - INFO - Starting scenario: Search with an invalid employee name
+2026-04-30 13:02:43,097 - environment - INFO - Completed scenario: Search with an invalid employee name - Status: Status.passed
+2026-04-30 13:02:43,169 - environment - INFO - Starting scenario: Search with empty fields
+2026-04-30 13:02:53,321 - environment - INFO - Completed scenario: Search with empty fields - Status: Status.passed
+2026-04-30 13:04:13,884 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 13:04:20,164 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 13:04:22,601 - employee_steps - INFO - Entering employee details
+2026-04-30 13:04:23,003 - employee_steps - INFO - Saving employee record
+2026-04-30 13:04:27,659 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 13:04:27,734 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 13:04:35,109 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 13:04:39,514 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 13:04:39,586 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 13:04:45,474 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 13:04:50,248 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 13:04:50,320 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 13:04:57,639 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 13:05:02,173 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 13:05:02,246 - environment - INFO - Starting scenario: Successful login
+2026-04-30 13:05:07,315 - login steps - INFO - Navigating to login page
+2026-04-30 13:05:07,315 - login steps - INFO - Entering valid credentials
+2026-04-30 13:05:10,041 - environment - INFO - Completed scenario: Successful login - Status: Status.passed
+2026-04-30 13:05:10,107 - environment - INFO - Starting scenario: Unsuccessful Login
+2026-04-30 13:05:14,369 - login steps - INFO - Navigating to login page
+2026-04-30 13:05:17,535 - environment - INFO - Completed scenario: Unsuccessful Login - Status: Status.passed
+2026-04-30 13:05:17,608 - environment - INFO - Starting scenario: Login with empty username
+2026-04-30 13:05:21,711 - login steps - INFO - Navigating to login page
+2026-04-30 13:05:22,188 - environment - INFO - Completed scenario: Login with empty username - Status: Status.passed
+2026-04-30 13:05:22,257 - environment - INFO - Starting scenario: Login with empty password
+2026-04-30 13:05:26,869 - login steps - INFO - Navigating to login page
+2026-04-30 13:05:27,322 - environment - INFO - Completed scenario: Login with empty password - Status: Status.passed
+2026-04-30 13:05:27,390 - environment - INFO - Starting scenario: Login with empty credentials
+2026-04-30 13:05:31,523 - login steps - INFO - Navigating to login page
+2026-04-30 13:05:31,977 - environment - INFO - Completed scenario: Login with empty credentials - Status: Status.passed
+2026-04-30 13:05:32,047 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 13:05:44,358 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 13:05:44,424 - environment - INFO - Starting scenario: Add only firstname
+2026-04-30 13:05:55,006 - environment - INFO - Completed scenario: Add only firstname - Status: Status.passed
+2026-04-30 13:05:55,075 - environment - INFO - Starting scenario: Add only lastname
+2026-04-30 13:06:06,777 - environment - INFO - Completed scenario: Add only lastname - Status: Status.passed
+2026-04-30 13:06:06,848 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 13:06:16,775 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 13:06:16,846 - environment - INFO - Starting scenario: Search with a valid employee name
+2026-04-30 13:06:31,595 - environment - INFO - Completed scenario: Search with a valid employee name - Status: Status.passed
+2026-04-30 13:06:31,673 - environment - INFO - Starting scenario: Search with a valid employee ID
+2026-04-30 13:06:46,688 - environment - INFO - Completed scenario: Search with a valid employee ID - Status: Status.passed
+2026-04-30 13:06:46,764 - environment - INFO - Starting scenario: Search with an invalid employee name
+2026-04-30 13:06:55,799 - environment - INFO - Completed scenario: Search with an invalid employee name - Status: Status.passed
+2026-04-30 13:06:55,871 - environment - INFO - Starting scenario: Search with empty fields
+2026-04-30 13:07:07,547 - environment - INFO - Completed scenario: Search with empty fields - Status: Status.passed

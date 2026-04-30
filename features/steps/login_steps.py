@@ -3,15 +3,18 @@ from behave import Given, When , Then
 from pages.login_page import LoginPage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+from logger import get_logger
+logger = get_logger("login steps")
 
 #Positive Scenario
 @Given("user is on the login page")
 def step_open_login_page(context):
+    logger.info("Navigating to login page")
     context.login_page = LoginPage()
 
 @When("user enters valid credentials") 
 def step_enter_valid_credentials(context):
+    logger.info("Entering valid credentials")
     driver = context.driver
     wait = WebDriverWait (driver, 10) 
     wait.until(EC.presence_of_element_located(LoginPage.USERNAME)).send_keys(VALID_USERNAME) 

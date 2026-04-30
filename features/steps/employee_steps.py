@@ -4,9 +4,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from test_data import EMPLOYEE_FIRST_NAME, EMPLOYEE_LAST_NAME
 
+from logger import get_logger
+logger = get_logger("employee_steps")  # change name per file
 
 @given("user is on the add employee page")
 def step_navigate_to_add_employee(context):
+    logger.info("Navigating to add employee page")
     driver = context.driver
     wait = WebDriverWait (driver, 10) 
     wait.until(EC.presence_of_element_located(EmployeePage.PIM_MENU)).click() 
@@ -14,6 +17,7 @@ def step_navigate_to_add_employee(context):
 
 @when ("user enters valid firstname and lastname") 
 def step_enter_employee_details(context):
+    logger.info("Entering employee details")
     driver = context.driver
     wait = WebDriverWait(driver, 10) 
     wait.until(EC.presence_of_element_located(EmployeePage.FIRST_NAME)).send_keys(EMPLOYEE_FIRST_NAME)
@@ -21,6 +25,7 @@ def step_enter_employee_details(context):
 
 @when("user saves the details")
 def step_save_employee(context):
+    logger.info("Saving employee record")
     context.driver.find_element(*EmployeePage.SAVE_BUTTON).click()
 
 @then("user should see personal details saved message")
