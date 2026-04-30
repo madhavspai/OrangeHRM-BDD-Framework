@@ -18,13 +18,15 @@ def after_scenario(context, scenario):
 def before_scenario(context, scenario):
     context.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     context.driver.maximize_window()
-    context.driver.get("https://opensource-demo.orangehrmlive.com")
+    context.driver.implicitly_wait(10)
+    context.driver.get("https://opensource-demo.orangehrmlive.com") 
     
+       
     # Auto login only for non-login features
     if "Login" not in scenario.feature.name:
         from pages.login_page import LoginPage
         from test_data import VALID_USERNAME, VALID_PASSWORD
-        wait = WebDriverWait(context.driver, 10)
+        wait = WebDriverWait(context.driver, 20)
         wait.until(EC.presence_of_element_located(LoginPage.USERNAME)).send_keys(VALID_USERNAME)
         context.driver.find_element(*LoginPage.PASSWORD).send_keys(VALID_PASSWORD)
         context.driver.find_element(*LoginPage.LOGIN_BUTTON).click()
