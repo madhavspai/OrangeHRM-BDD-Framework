@@ -200,3 +200,49 @@
 2026-04-30 13:06:55,799 - environment - INFO - Completed scenario: Search with an invalid employee name - Status: Status.passed
 2026-04-30 13:06:55,871 - environment - INFO - Starting scenario: Search with empty fields
 2026-04-30 13:07:07,547 - environment - INFO - Completed scenario: Search with empty fields - Status: Status.passed
+2026-04-30 16:10:14,325 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 16:10:26,342 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 16:10:30,025 - employee_steps - INFO - Entering employee details
+2026-04-30 16:10:30,415 - employee_steps - INFO - Saving employee record
+2026-04-30 16:10:35,127 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 16:10:35,204 - environment - INFO - Starting scenario: Add only first name
+2026-04-30 16:10:44,207 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 16:10:49,217 - environment - INFO - Completed scenario: Add only first name - Status: Status.passed
+2026-04-30 16:10:49,290 - environment - INFO - Starting scenario: Add only last name
+2026-04-30 16:10:57,517 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 16:11:02,279 - environment - INFO - Completed scenario: Add only last name - Status: Status.passed
+2026-04-30 16:11:02,353 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 16:11:09,685 - employee_steps - INFO - Navigating to add employee page
+2026-04-30 16:11:14,161 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.passed
+2026-04-30 16:11:14,236 - environment - INFO - Starting scenario: Successful login
+2026-04-30 16:11:19,723 - login steps - INFO - Navigating to login page
+2026-04-30 16:11:19,723 - login steps - INFO - Entering valid credentials
+2026-04-30 16:11:22,117 - environment - INFO - Completed scenario: Successful login - Status: Status.passed
+2026-04-30 16:11:22,189 - environment - INFO - Starting scenario: Unsuccessful Login
+2026-04-30 16:11:26,368 - login steps - INFO - Navigating to login page
+2026-04-30 16:11:28,838 - environment - INFO - Completed scenario: Unsuccessful Login - Status: Status.passed
+2026-04-30 16:11:28,908 - environment - INFO - Starting scenario: Login with empty username
+2026-04-30 16:11:34,259 - login steps - INFO - Navigating to login page
+2026-04-30 16:11:34,799 - environment - INFO - Completed scenario: Login with empty username - Status: Status.passed
+2026-04-30 16:11:34,868 - environment - INFO - Starting scenario: Login with empty password
+2026-04-30 16:11:41,123 - login steps - INFO - Navigating to login page
+2026-04-30 16:11:41,542 - environment - INFO - Completed scenario: Login with empty password - Status: Status.passed
+2026-04-30 16:11:41,613 - environment - INFO - Starting scenario: Login with empty credentials
+2026-04-30 16:11:45,938 - login steps - INFO - Navigating to login page
+2026-04-30 16:11:46,521 - environment - INFO - Completed scenario: Login with empty credentials - Status: Status.passed
+2026-04-30 16:11:46,593 - environment - INFO - Starting scenario: Add employee details
+2026-04-30 16:11:58,299 - environment - INFO - Completed scenario: Add employee details - Status: Status.passed
+2026-04-30 16:11:58,369 - environment - INFO - Starting scenario: Add only firstname
+2026-04-30 16:12:08,400 - environment - INFO - Completed scenario: Add only firstname - Status: Status.passed
+2026-04-30 16:12:08,467 - environment - INFO - Starting scenario: Add only lastname
+2026-04-30 16:12:18,249 - environment - INFO - Completed scenario: Add only lastname - Status: Status.passed
+2026-04-30 16:12:18,318 - environment - INFO - Starting scenario: add blank first and last name
+2026-04-30 16:12:24,180 - environment - INFO - Completed scenario: add blank first and last name - Status: Status.hook_error
+2026-04-30 16:12:24,209 - environment - INFO - Starting scenario: Search with a valid employee name
+2026-04-30 16:39:47,159 - environment - INFO - Completed scenario: Search with a valid employee name - Status: Status.passed
+2026-04-30 16:39:47,245 - environment - INFO - Starting scenario: Search with a valid employee ID
+2026-04-30 16:40:02,519 - environment - INFO - Completed scenario: Search with a valid employee ID - Status: Status.passed
+2026-04-30 16:40:02,608 - environment - INFO - Starting scenario: Search with an invalid employee name
+2026-04-30 16:40:15,813 - environment - INFO - Completed scenario: Search with an invalid employee name - Status: Status.passed
+2026-04-30 16:40:15,896 - environment - INFO - Starting scenario: Search with empty fields
+2026-04-30 16:40:26,219 - environment - INFO - Completed scenario: Search with empty fields - Status: Status.passed
