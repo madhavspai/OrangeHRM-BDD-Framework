@@ -23,7 +23,7 @@ def step_enter_employee_details(context):
 def step_save_employee(context):
     context.driver.find_element(*EmployeePage.SAVE_BUTTON).click()
 
-@then("user should see successfully saved message")
+@then("user should see personal details saved message")
 def step_verify_employee_saved(context):
     wait = WebDriverWait(context.driver, 10) 
     wait.until(lambda driver: "viewPersonalDetails" in driver.current_url)

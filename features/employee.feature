@@ -26,3 +26,23 @@ Scenario: add blank first and last name
 Given user is on the add employee page   
 When user submits the form without firstname and lastname
 Then user should see first name last name "required" message  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
