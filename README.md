@@ -49,8 +49,7 @@ Setup Instructions (Windows)
 
 ## Run Tests
 ```bash
-behave features/
-```
+behave features/ ```
 
 ## Run with Allure Report
 ```bash
