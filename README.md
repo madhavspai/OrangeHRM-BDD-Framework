@@ -33,6 +33,17 @@ OrangeHRM-BDD-Framework/
 4. Install dependencies: `pip install selenium behave allure-behave webdriver-manager`
 5. Install Allure: `brew install allure`
 
+#Windows
+1. Clone the repository
+2. Create virtual environment: python -m venv venv
+3. Activate the environment: venv\Scripts\activate
+4. Install dependencies: pip install selenium behave allure-behave webdriver-manager
+5. Install Allure (choose one of the following methods):
+6. Using Scoop (closest to Homebrew): scoop install allure
+    Using NPM (requires Node.js): npm install -g allure-commandline
+    Using Winget: winget install qameta.allure
+    Note on Activation: If you are using PowerShell and get an "Execution_Policies" error on Step 3, you may need to run Set-ExecutionPolicy Unrestricted -Scope CurrentUser as an administrator first.
+
 ## Run Tests
 ```bash
 behave features/

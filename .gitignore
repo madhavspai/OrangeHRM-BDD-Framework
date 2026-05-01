@@ -1,0 +1,14 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+
+# Generated Test Outputs
+logs/*
+reports/*
+allure-results/*
+!logs/.gitkeep
+!reports/.gitkeep
