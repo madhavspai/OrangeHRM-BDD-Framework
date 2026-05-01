@@ -1,30 +1,68 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
+
 from utils.logger import get_logger
 
 logger = get_logger("environment")
 
+BASE_URL = "https://opensource-demo.orangehrmlive.com"
+
+
 def before_scenario(context, scenario):
     logger.info(f"Starting scenario: {scenario.name}")
-    context.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    context.driver.maximize_window()
-    context.driver.implicitly_wait(10)
-    context.driver.get("https://opensource-demo.orangehrmlive.com")
 
-    if "Login" not in scenario.feature.name:
+    #Fresh browser per scenario (prevents SPA state leakage)
+    context.driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install())
+    )
+    context.driver.maximize_window()
+    context.driver.implicitly_wait(5)
+
+    #Always start from a clean session
+    context.driver.delete_all_cookies()
+    context.driver.get(BASE_URL)
+
+    #Login ONLY if scenario is not a login scenario
+    if "login" not in scenario.feature.name.lower():
         from pages.login_page import LoginPage
         from test_data import VALID_USERNAME, VALID_PASSWORD
-        wait = WebDriverWait(context.driver, 20)
-        wait.until(EC.presence_of_element_located(LoginPage.USERNAME)).send_keys(VALID_USERNAME)
-        context.driver.find_element(*LoginPage.PASSWORD).send_keys(VALID_PASSWORD)
-        context.driver.find_element(*LoginPage.LOGIN_BUTTON).click()
-        wait.until(lambda driver: "dashboard" in driver.current_url.lower())
+
+        driver = context.driver
+        wait = WebDriverWait(driver, 15)
+
+        logger.info("Performing precondition login")
+
+        wait.until(
+            EC.element_to_be_clickable(LoginPage.USERNAME)
+        ).clear()
+        driver.find_element(*LoginPage.USERNAME).send_keys(VALID_USERNAME)
+
+        driver.find_element(*LoginPage.PASSWORD).clear()
+        driver.find_element(*LoginPage.PASSWORD).send_keys(VALID_PASSWORD)
+
+        driver.find_element(*LoginPage.LOGIN_BUTTON).click()
+
+        #SPA‑safe login verification (NOT URL based)
+        wait.until(
+            EC.visibility_of_element_located(
+                (By.CSS_SELECTOR, ".oxd-userdropdown")
+            )
+        )
+
 
 def after_scenario(context, scenario):
-    logger.info(f"Completed scenario: {scenario.name} - Status: {scenario.status}")
+    logger.info(
+        f"Completed scenario: {scenario.name} - Status: {scenario.status}"
+    )
+
+    #Screenshot only on failure
     if scenario.status == "failed":
-        context.driver.save_screenshot(f"logs/{scenario.name}.png")
+        screenshot_path = f"logs/{scenario.name.replace(' ', '_')}.png"
+        context.driver.save_screenshot(screenshot_path)
+        logger.error(f"Screenshot saved: {screenshot_path}")
+
     context.driver.quit()
