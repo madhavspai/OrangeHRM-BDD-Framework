@@ -1,7 +1,8 @@
 # OrangeHRM BDD Automation Framework
 
 ## Overview
-A production-grade BDD automation framework built with Python, Selenium, and Behave targeting the OrangeHRM demo application.
+A production-grade BDD automation framework built with Python, Selenium, 
+and Behave targeting the OrangeHRM demo application.
 
 ## Technology Stack
 - Python 3.x
@@ -72,4 +73,4 @@ allure serve reports/
 
 ## Limitations
 - Demo site occasionally slow causing intermittent failures
-- Shared demo environment — test data may vary
+- Shared demo environment-test data may vary
