@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from test_data import EMPLOYEE_FIRST_NAME, EMPLOYEE_LAST_NAME
 
-from logger import get_logger
+from utils.logger import get_logger
 logger = get_logger("employee_steps")  # change name per file
 
 @given("user is on the add employee page")
