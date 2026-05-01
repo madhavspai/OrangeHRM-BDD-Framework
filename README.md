@@ -9,8 +9,10 @@ A production-grade BDD automation framework built with Python, Selenium, and Beh
 - Behave (BDD Framework)
 - Allure Reporting
 - Python Logging
+- WebDriver Manager
 
 ## Project Structure
+```text
 OrangeHRM-BDD-Framework/
 ├── features/
 │   ├── login.feature
@@ -24,48 +26,48 @@ OrangeHRM-BDD-Framework/
 ├── reports/
 ├── test_data.py
 ├── logger.py
-└── README.md
+├── requirements.txt
+└── README.md 
 
-## Setup Instructions
-1. Clone the repository
-2. Create virtual environment: `python3 -m venv venv`
-3. Activate: `source venv/bin/activate`
-4. Install dependencies: `pip install selenium behave allure-behave webdriver-manager`
-5. Install Allure: `brew install allure`
+Setup Instructions (Mac/Linux)
+    Clone the repository
+    Create virtual environment: python3 -m venv .venv
+    Activate: source .venv/bin/activate
+    Install dependencies: pip install -r requirements.txt
+    Install Allure: brew install allure
 
-#Windows
-1. Clone the repository
-2. Create virtual environment: python -m venv venv
-3. Activate the environment: venv\Scripts\activate
-4. Install dependencies: pip install selenium behave allure-behave webdriver-manager
-5. Install Allure (choose one of the following methods):
-6. Using Scoop (closest to Homebrew): scoop install allure
-    Using NPM (requires Node.js): npm install -g allure-commandline
-    Using Winget: winget install qameta.allure
-    Note on Activation: If you are using PowerShell and get an "Execution_Policies" error on Step 3, you may need to run Set-ExecutionPolicy Unrestricted -Scope CurrentUser as an administrator first.
+Setup Instructions (Windows)
+    Clone the repository
+    Create virtual environment:python -m venv .venv
+    Activate the environment: .venv\Scripts\activate
+    Note: If using PowerShell and you get an "Execution_Policies" error, run Set-ExecutionPolicy Unrestricted -Scope CurrentUser as administrator first.
+    Install dependencies: pip install -r requirements.txt
+    Install Allure (choose one):
+    NPM (Requires Node.js): npm install -g allure-commandline
+    Scoop: scoop install allure
+    Winget: winget install qameta.allure
 
-## Run Tests
-```bash
+
+Run Tests
+Bash
 behave features/
-```
 
-## Run with Allure Report
-```bash
+Run with Allure Report
+Bash
 behave -f allure_behave.formatter:AllureFormatter -o reports/ features/
 allure serve reports/
-```
 
-## Features Covered
-- Login Functionality (5 scenarios)
-- Add Employee (4 scenarios)
-- My Info / Personal Details (4 scenarios)
-- Employee Search (4 scenarios)
+Features Covered
+Login Functionality (5 scenarios)
+Add Employee (4 scenarios)
+My Info / Personal Details (4 scenarios)
+Employee Search (4 scenarios)
 
-## Assumptions
-- OrangeHRM demo site is accessible
-- Chrome browser is installed
-- Tests run sequentially
+Assumptions
+OrangeHRM demo site is accessible.
+Chrome browser is installed on the host machine.
+Tests run sequentially.
 
-## Limitations
-- Demo site occasionally slow causing intermittent failures
-- Shared demo environment — test data may vary
+Limitations
+Demo site occasionally slow, which may cause intermittent timeout failures.
+Shared demo environment — test data may vary or be overwritten by other users.
