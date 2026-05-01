@@ -10,7 +10,6 @@ from test_data import EMPLOYEE_FIRST_NAME, EMPLOYEE_LAST_NAME
 def force_clear(driver, element, timeout=10):
     """
     Robust clear helper for OrangeHRM (Vue.js + loader-safe).
-
     Handles:
     - Form loader overlay (.oxd-form-loader)
     - Vue reactivity issues

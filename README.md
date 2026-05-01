@@ -46,7 +46,13 @@ Setup Instructions (Windows)
     Install Allure (choose one):
     NPM (Requires Node.js): npm install -g allure-commandline
     Scoop: scoop install allure
-    Winget: winget install qameta.allure
+    Winget: winget install qameta.allure 
+    cd OrangeHRM-BDD-Framework
+    .venv\Scripts\activate
+    # Generate Allure results
+    behave -f allure_behave.formatter:AllureFormatter -o reports/ features/
+    # View Allure report
+    & "$HOME\scoop\shims\allure.cmd" serve reports/ <<-- from cmd to show results. Open with Powershell
 
 ## Run Tests
 ```bash
