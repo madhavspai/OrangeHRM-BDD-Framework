@@ -48,26 +48,26 @@ Setup Instructions (Windows)
     Winget: winget install qameta.allure
 
 
-Run Tests
+## Run Tests
 Bash
 behave features/
 
-Run with Allure Report
+## Run with Allure Report
 Bash
 behave -f allure_behave.formatter:AllureFormatter -o reports/ features/
 allure serve reports/
 
-Features Covered
+## Features Covered
 Login Functionality (5 scenarios)
 Add Employee (4 scenarios)
 My Info / Personal Details (4 scenarios)
 Employee Search (4 scenarios)
 
-Assumptions
+## Assumptions
 OrangeHRM demo site is accessible.
 Chrome browser is installed on the host machine.
 Tests run sequentially.
 
-Limitations
+## Limitations
 Demo site occasionally slow, which may cause intermittent timeout failures.
 Shared demo environment — test data may vary or be overwritten by other users.
