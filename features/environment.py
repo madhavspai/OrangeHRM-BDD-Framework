@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options  # <-- Added Import
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -15,9 +16,16 @@ BASE_URL = "https://opensource-demo.orangehrmlive.com"
 def before_scenario(context, scenario):
     logger.info(f"Starting scenario: {scenario.name}")
 
+    #Fresh browser start
+    chrome_options = Options()
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    # ------------------------------
+
     #Fresh browser per scenario (prevents SPA state leakage)
     context.driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install())
+        service=Service(ChromeDriverManager().install()),
+        options=chrome_options  # <-- Added options parameter
     )
     context.driver.maximize_window()
     context.driver.implicitly_wait(5)

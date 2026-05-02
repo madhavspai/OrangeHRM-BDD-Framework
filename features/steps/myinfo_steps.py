@@ -1,3 +1,4 @@
+import sys
 from behave import given, when, then
 from pages.myinfo_page import MyInfoPage
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,7 +14,8 @@ def force_clear(driver, element, timeout=10):
     Handles:
     - Form loader overlay (.oxd-form-loader)
     - Vue reactivity issues
-    - Click interception problems
+    - Click interception problems (Sticky Headers)
+    - OS-Agnostic Select All (Mac vs Windows)
     """
 
     wait = WebDriverWait(driver, timeout)
@@ -28,9 +30,18 @@ def force_clear(driver, element, timeout=10):
     # 2. Wait until the element is actually clickable
     element = wait.until(EC.element_to_be_clickable(element))
 
-    # 3. Vue-safe clear sequence
-    element.click()
-    element.send_keys(Keys.CONTROL + "a")
+    
+    # Scroll the element to the middle of the screen to avoid sticky headers
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+
+    # 3. Vue-safe clear sequence using JS Click to bypass overlapping elements
+    driver.execute_script("arguments[0].click();", element)
+    
+    if sys.platform == 'darwin':
+        element.send_keys(Keys.COMMAND + "a") # For Mac
+    else:
+        element.send_keys(Keys.CONTROL + "a") # For Windows
+        
     element.send_keys(Keys.BACKSPACE)
 
     # Extra safety for Vue state sync
