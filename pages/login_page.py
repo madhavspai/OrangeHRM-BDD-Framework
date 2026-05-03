@@ -17,3 +17,4 @@ class LoginPage:
 
 
 
+    LOGIN_BUTTON = (By., "button[type='submit']")
