@@ -17,4 +17,4 @@ class LoginPage:
 
 
 
-    LOGIN_BUTTON = (By., "button[type='submit']")
+    LOGIN_BUTTON = (By.CSS_SELECTOR, "button[type='submit']")
